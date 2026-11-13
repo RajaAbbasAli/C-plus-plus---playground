@@ -1,0 +1,107 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice, model;
+
+    cout << "===== Mobile Companies =====" << endl;
+    cout << "1. Samsung" << endl;
+    cout << "2. iPhone" << endl;
+    cout << "3. Oppo" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        cout << "\nSamsung Models:" << endl;
+        cout << "1. A15" << endl;
+        cout << "2. S23" << endl;
+        cout << "3. S24" << endl;
+
+        cout << "Select model: ";
+        cin >> model;
+
+        switch (model)
+        {
+        case 1:
+            cout << "You selected Samsung A15.";
+            break;
+
+        case 2:
+            cout << "You selected Samsung S23.";
+            break;
+
+        case 3:
+            cout << "You selected Samsung S24.";
+            break;
+
+        default:
+            cout << "Invalid model!";
+        }
+        break;
+
+    case 2:
+        cout << "\niPhone Models:" << endl;
+        cout << "1. iPhone 13" << endl;
+        cout << "2. iPhone 14" << endl;
+        cout << "3. iPhone 15" << endl;
+
+        cout << "Select model: ";
+        cin >> model;
+
+        switch (model)
+        {
+        case 1:
+            cout << "You selected iPhone 13.";
+            break;
+
+        case 2:
+            cout << "You selected iPhone 14.";
+            break;
+
+        case 3:
+            cout << "You selected iPhone 15.";
+            break;
+
+        default:
+            cout << "Invalid model!";
+        }
+        break;
+
+    case 3:
+        cout << "\nOppo Models:" << endl;
+        cout << "1. A57" << endl;
+        cout << "2. A78" << endl;
+        cout << "3. Reno 11" << endl;
+
+        cout << "Select model: ";
+        cin >> model;
+
+        switch (model)
+        {
+        case 1:
+            cout << "You selected Oppo A57.";
+            break;
+
+        case 2:
+            cout << "You selected Oppo A78.";
+            break;
+
+        case 3:
+            cout << "You selected Oppo Reno 11.";
+            break;
+
+        default:
+            cout << "Invalid model!";
+        }
+        break;
+
+    default:
+        cout << "Invalid company choice!";
+    }
+
+    return 0;
+}
