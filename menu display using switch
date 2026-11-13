@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int choice;
+
+	cout << "======food menu====== " << endl;
+	cout << "1. pizza" << endl;
+	cout << "2. burger " << endl;
+	cout << "3. pasta " << endl;
+	cout << "4. fries " << endl;
+	
+	cout << "enter your choice (1 - 4) :";
+	cin >> choice;
+
+	switch (choice) {
+	case 1:
+		cout << "you selected pizza . price is Rs 3200";
+			 break;
+	case 2:
+		cout << "you selected burger . price is Rs 800 ";
+		break;
+	case 3:
+		cout << "you selected pASTA . PRICE IS Rs 2000 ";
+        break;
+	case 4:
+		cout << "you selected fries . price is Rs 1500";
+		break;
+	default:
+		cout << "invalid input !";
+
+	}
+	return 0;
+}
