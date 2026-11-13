@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int choice;
+
+	cout << "======Electricity Bill Menu======"<<endl;
+	cout << "1. Domestic Connection" << endl;
+	cout << "2. Commercial Connection" << endl;
+	cout << " 3. Industrial Connection" << endl;
+
+	cout << "Enter your choose :";
+	cin >> choice;
+
+	switch (choice) {
+
+	case 1:
+		cout << "you selected domestic connection ";
+		break;
+	case 2:
+		cout << "you selected commercial connection";
+		break;
+	case 3:
+		cout << "you selected industrial connection ";
+		break;
+	default:
+		cout << "invalid input!";
+	}
+	return 0;
+}
