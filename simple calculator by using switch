@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+	int a, b ;
+    char operation;
+	cout << "enter number a: ";
+	cin >> a;
+	
+	cout << "enter the operator ( + , - , * , / ):"  ;
+	cin >> operation;
+
+	cout << "enter number b :" ;
+	cin >> b;
+
+	switch(operation){
+		case '+':
+			cout << "a + b :" << a + b << endl;
+			     break;
+		case '*':
+			cout << "a * b: " << a * b << endl;
+			     break;
+		case '-':
+			cout << "a - b :" << a - b << endl;
+			     break;
+		case '/':
+            if(a!=0)
+			cout << "a / b : " << a / b << endl;
+            else
+                cout<<"enter zero is not allowed :";
+			   break;
+        
+		default:
+			cout << "invalid operator!" << endl;
+	return 0;
+}
+}
