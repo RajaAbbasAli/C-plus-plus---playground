@@ -1,0 +1,22 @@
+ 
+#include <iostream>
+using namespace std;
+int main() {
+int years, months , days , hours;
+    cout<<"Enter age : ";
+    cin>>years;
+
+    months = years * 12 ;
+
+    days = months * 30;
+
+    hours = days * 24 ;
+    
+
+    cout<<"Months = "<<months<<endl;
+    cout<<"days = "<<days<<endl;
+    cout<<"hours = " <<hours<<endl;
+    
+   
+    return 0;
+}
