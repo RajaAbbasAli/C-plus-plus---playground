@@ -1,0 +1,31 @@
+// /Ask for marks in theory and practical.
+// If theory ≥ 40:
+// o	If practical ≥ 20 → “You passed the exam.”
+// o	Else → “Failed in practical.”
+// Else → “Failed in theory.”
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     int theory, practical;
+    cout<<"Enter marks in theory :";
+    cin>>theory;
+    cout<<"Enter marks in practical :";
+    cin>>practical;
+
+    if (theory>=40){
+        if (practical>=20){
+            cout<<"you passed the exam.";}
+            else{
+            cout<<"failed in practical.";
+            }
+        }
+    else
+    {
+        cout<<"failed in theory";
+    }
+    
+    return 0;
+}
