@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string username, password;
+
+    // Ask user for username and password
+    cout << "Enter username: ";
+    cin >> username;
+
+    cout << "Enter password: ";
+    cin >> password;
+
+    // Nested if-else logic
+    if (username == "admin") {
+        if (password == "1234") {
+            cout << "Login successful!" << endl;
+        } else {
+            cout << "Incorrect password." << endl;
+        }
+    } else {
+        cout << "Invalid username." << endl;
+    }
+
+    return 0;
+}
