@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    bool isPrime = true;
+
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    // 0 and 1 are not prime numbers
+    if (num <= 1) {
+        isPrime = false;
+    } else {
+        // Check for factors from 2 up to num / 2
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break; // Factor found, no need to check further
+            }
+        }
+    }
+
+    if (isPrime) {
+        cout << num << " is a prime number." << endl;
+    } else {
+        cout << num << " is not a prime number." << endl;
+    }
+
+    return 0;
+}
