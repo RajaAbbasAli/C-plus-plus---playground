@@ -1,0 +1,27 @@
+// Input a student’s percentage and age.
+// If percentage ≥ 50 and age ≥ 18 → print “Eligible for admission”
+// Else → print “Not eligible.”
+
+#include <iostream>
+using namespace std;
+int main() {
+    int creditscore;
+
+    cout<<"Enter your credit score :";
+    cin>>creditscore;
+
+    if(creditscore >= 700){
+        cout<<"You are eligible for a loan.";
+    }
+     else
+    {
+        cout<<"Sorry, you are not eligible for a loan.";
+    }
+                
+ 
+  
+    
+
+     
+    return 0;
+}
