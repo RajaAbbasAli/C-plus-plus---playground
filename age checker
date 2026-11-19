@@ -1,0 +1,24 @@
+// 12.	Write a program to input a person's age and check whether the age is greater than or equal to 18 and less than 60.
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+
+
+    cout<<"Enter age :";
+    cin>>age;
+
+    if (age>=18 ){
+        cout<<"age is greater  ";
+    }
+  else if(age<16){
+          
+        cout<<"age is less than 16";
+  }
+    
+
+     
+    return 0;
+}
