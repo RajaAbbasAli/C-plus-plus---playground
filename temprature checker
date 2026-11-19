@@ -1,0 +1,31 @@
+// Input the temperature (°C). Use an if-else-if structure so that only one message is displayed.
+// If temperature < 10 → print “It’s cold.”
+// Else if temperature is between 10 and 25 (inclusive) → print “Nice weather.”
+// Else → print “It’s hot.”
+
+#include <iostream>
+using namespace std;
+int main() {
+    int temprature;
+
+    cout<<"Enter your temprature :";
+    cin>>temprature;
+
+    if(temprature < 10){
+        cout<<"It’s cold.";
+    }
+     else if(temprature>=10 && temprature<=25)
+    {
+        cout<<" Nice weather.";
+    }
+      else
+     {
+         cout<<"its too hot";
+     }
+ 
+  
+    
+
+     
+    return 0;
+}
