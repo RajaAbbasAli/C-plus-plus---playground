@@ -1,0 +1,33 @@
+// Input a student’s percentage and age.
+// If percentage ≥ 50 and age ≥ 18 → print “Eligible for admission”
+// Else → print “Not eligible.”
+
+#include <iostream>
+using namespace std;
+int main() {
+    int percentage , age;
+
+
+    cout<<"Enter your age :";
+    cin>>age;
+
+    
+    cout<<"Enter the percentage :" ;
+    cin>>percentage;
+
+  
+ if (age>=18 && percentage>=50){
+
+     cout<<"Eligible for admission";
+}
+             else{
+             cout<<"Not eligible .";
+                 }
+    
+ 
+  
+    
+
+     
+    return 0;
+}
