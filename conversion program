@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int totalMinutes , hours ,remainingMinutes;
+
+
+    cout<<"Enter totalMInutes :";
+    cin>>totalMinutes;
+
+    hours= totalMinutes / 60;
+    remainingMinutes = totalMinutes % 60;
+
+    cout<<"hours :"<<hours<<endl;
+    cout<<"remainingMinutes :"<<remainingMinutes;
+    
+    return 0;
+}
