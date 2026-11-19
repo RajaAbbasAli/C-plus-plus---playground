@@ -1,0 +1,33 @@
+ // Input three side lengths. First check whether they form a valid triangle (the sum of any two sides must be greater than the third side). If the triangle is invalid, display “Invalid triangle.” Otherwise, identify its type: • If all sides are equal → Equilateral. • Else if any two sides are equal → Isosceles. • Else → Scalene.
+
+#include<iostream>
+using namespace std;
+int main( ){
+  int l1 , l2 ,l3;
+
+    cout<<"Enter three length :";
+    cin>>l1>>l2>>l3;
+    
+if(l1 + l2>l3|| l1 + l3>l2 ||l2 + l3>l1){
+    cout<<"=====its form a triangle====="<<endl;
+    if(l1==l2 && l1==l3){
+        cout<<"Equalateral Triangle"<<endl;
+    }
+        else if(l1==l2||l1==l3)
+        {
+        cout<<"isosceles";
+        }
+        else
+    {
+        cout<<"scalene";
+    }}
+        
+    
+
+    else
+{
+    cout<<"Invalid Triangle";
+}
+
+    return 0;
+}
