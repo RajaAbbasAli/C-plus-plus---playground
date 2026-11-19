@@ -1,0 +1,36 @@
+// Ask for age and license status (Y/N).
+// If age ≥ 18:
+// o	If license = ‘Y’ → “You can drive.”
+// o	Else → “You need a license.”
+// Else → “You’re too young to drive.”
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age ;
+    char licenceStatus;
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout<<"Enter your license status(y / Y):";
+    cin>>licenceStatus;
+    
+    if (age  >= 18 ) {
+        if(licenceStatus=='y'|| licenceStatus=='Y'){
+            cout << "you can drive" << endl;
+        }
+            else
+        {
+            cout<<"you need a licence!";
+        }
+    }
+else
+    {
+        cout<<"You’re too young to drive";
+    }
+    return 0;
+}
