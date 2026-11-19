@@ -1,0 +1,42 @@
+// The program should:
+// 1.	Ask the user for the passenger’s age.
+// 2.	Ask for the original ticket price.
+// 3.	Apply the following discount rules:
+// o	If age < 5 → Ticket is Free
+// o	If age is between 5 and 17 → Apply 50% discount
+// o	If age is 60 or above → Apply 30% discount
+// o	Otherwise → No discount
+
+#include <iostream>
+using namespace std;
+int main() {
+    int passengerAge , ticketPrice;
+
+    cout<<" Enter your passengerAge:";
+    cin>>passengerAge;
+    
+    cout<<"ticket price is :";
+    cin>>ticketPrice;
+
+    
+    if(passengerAge < 5){
+        cout<<"Ticket is free.";
+    }
+     else if(passengerAge>=5 && passengerAge<=17)
+    {
+        cout<<"=== Apply 50% discount ====";
+    }
+     else if (passengerAge>=60)
+     {
+         cout<<"=== Apply 30% discount ====";
+     }
+ 
+  else
+     {
+         cout<<"no discount";
+     }
+    
+
+     
+    return 0;
+}
